@@ -17,7 +17,6 @@ export const useUserStore = create<userState>((set) => ({
   userStoreData: intialState.userStoreData,
   loading: intialState.loading,
   userExist: (payload: User) => {
-    console.log(payload, "pay");
     set({
       userStoreData: payload,
       loading: false,
